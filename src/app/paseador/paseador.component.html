@@ -1,0 +1,20 @@
+<p>
+ {{mascota}}
+</p>
+
+<div class="form-group">
+  <label name="lblMascota" for="txtMascota">Mascota</label>
+  <input type="text" placeholder="Nombre de tu mascota" name="txtMascota" [(ngModel)]="mascota" >
+</div> 
+<button type="button" (click)="jugar()"> Jugar</button>
+
+<div *ngIf="mascota=='1'">
+<p>
+Esta es la parte 1
+</p>
+</div>
+<div *ngIf="mascota=='2'">
+<p>
+  Esta es la parte 2
+</p>
+</div>

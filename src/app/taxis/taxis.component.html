@@ -1,0 +1,19 @@
+<p>
+  {{paseador}}
+</p>
+
+<div class="form-group">
+  <label name="lblPaseador" for="txtPaseador" >Paseador</label>
+  <input type="text" placeholder="Escribe a tu paseador" name="txtPaseador" [(ngModel)]="paseador" />
+</div>
+<button type="button" name="pasear"(click)="pasear()">Pasear</button>
+<div *ngIf="paseador=='seccion1'">
+  <p>
+    Esta es la sección1
+  </p>  
+</div>
+<div *ngIf="paseador=='seccion2'">  
+  <p>
+    Esta es la sección2
+  </p>
+</div>
